@@ -11,12 +11,28 @@ import random
 class randomNum(FlowLauncher):
     def query(self, query):
         results = []
+        number = str(random.randint(0, 10000))
         if query == 'number':
             results.append({
-                'title': str(random.randint(0, 10000)),
+                'title': number,
                 'subtitle': 'Random Number',
-                'arg': str(random.randint(0, 10000)),
-                'icon': 'icon.png'
+                'icon': 'app.png'
+            })
+            results.append({
+                'title': "Regenerate",
+                'subtitle': "Click to regenerate number",
+                'icon': 'app.png'
+            })
+        elif query == 'number regenerate':
+            results.append({
+                'title': number,
+                'subtitle': 'Random Number',
+                'icon': 'app.png'
+            })
+            results.append({
+                'title': "Regenerate",
+                'subtitle': "Click to regenerate number",
+                'icon': 'app.png'
             })
         else:
             results.append({
