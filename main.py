@@ -25,6 +25,7 @@ class randomNum(FlowLauncher):
                 'arg': 'number',
                 'icon': 'app.png'
             })
+        return results
 
 if __name__ == "__main__":
     randomNum()
