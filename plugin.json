@@ -1,0 +1,12 @@
+{
+    "ID": "7dd2ae95-c5db-4c47-a7fe-8c59cc62b3da",
+    "ActionKeyword": "rd",
+    "Name": "Randoms",
+    "Description": "Generates randoms of the selected category",
+    "Author": "Brandon Bowdoin",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/spaghettiosareyummy/Flow.Launcher.Plugin.Randoms",
+    "IcoPath": "app.png",
+    "ExecuteFileName": "main.py"
+}
