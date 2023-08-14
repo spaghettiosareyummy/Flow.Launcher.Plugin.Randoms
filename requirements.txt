@@ -1,6 +1,1 @@
-<<<<<<< HEAD
 flowlauncher
-=======
-flowlauncher
-random
->>>>>>> 054d74380b1dbf276fd80a6c363ff6a85a3e3231
