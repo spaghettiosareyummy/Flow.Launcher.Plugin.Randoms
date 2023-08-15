@@ -21,7 +21,11 @@ class randomNum(FlowLauncher):
             results.append({
                 'title': "Regenerate",
                 'subtitle': "Click to regenerate number",
-                'icon': 'app.png'
+                'icon': 'app.png',
+                'JsonRPCAction': {
+                    'method': 'Flow.Launcher.ChangeQuery',
+                    'parameters': ['number', True],
+                }
             })
         elif query == 'number regenerate':
             results.append({
