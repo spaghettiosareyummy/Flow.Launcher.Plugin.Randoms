@@ -5,7 +5,6 @@ sys.path.append(os.path.join(parent_folder_path, 'lib'))
 sys.path.append(os.path.join(parent_folder_path, 'plugin'))
 
 from flowlauncher import FlowLauncher
-import webbrowser
 import random
 
 class randomNum(FlowLauncher):
@@ -15,27 +14,7 @@ class randomNum(FlowLauncher):
         if query == 'number':
             results.append({
                 'title': number,
-                'subtitle': 'Random Number',
-                'icon': 'app.png'
-            })
-            results.append({
-                'title': "Regenerate",
-                'subtitle': "Click to regenerate number",
-                'icon': 'app.png',
-                'JsonRPCAction': {
-                    'method': 'Flow.Launcher.ChangeQuery',
-                    'parameters': ['number', True],
-                }
-            })
-        elif query == 'number regenerate':
-            results.append({
-                'title': number,
-                'subtitle': 'Random Number',
-                'icon': 'app.png'
-            })
-            results.append({
-                'title': "Regenerate",
-                'subtitle': "Click to regenerate number",
+                'subtitle': 'Click to copy',
                 'icon': 'app.png'
             })
         else:
